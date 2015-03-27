@@ -36,7 +36,7 @@ Now run it against this repo::
     $ cookiecutter https://github.com/dominicrodger/cookiecutter-djangopackage.git
 
 You'll be prompted for some questions, answer them, then it will
-create a cookiecutter-dj-package with your new package.
+create a cookiecutter-djangopackage with your new package.
 
 Let's pretend you want to create a reusable Django app called
 "Blogging-for-Humans", with an app that can be placed in
