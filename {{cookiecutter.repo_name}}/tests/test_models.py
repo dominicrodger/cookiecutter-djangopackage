@@ -11,5 +11,5 @@ Tests for `{{ cookiecutter.repo_name }}` models module.
 from {{ cookiecutter.app_name }} import models
 
 
-def test_something(self):
+def test_something():
     pass
