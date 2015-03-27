@@ -2,16 +2,17 @@
 cookiecutter-djangopackage
 ==========================
 
-A cookiecutter_ template for creating reusable Django packages (installable apps) quickly. 
+A cookiecutter_ template for creating reusable Django packages
+(installable apps) quickly.
 
-**Why?** Creating reusable Django packages has always been annoying. There are no defined/maintained
-best practices (especially for ``setup.py``), so you end up cutting and pasting hacky, poorly understood, 
-often legacy code from one project to the other. This template, inspired by `cookiecutter-pypackage`_,
-is designed to allow Django developers the ability to break free from cargo-cult configuration and follow
-a common pattern dictated by the experts and maintained here. 
-
-.. _cookiecutter: https://github.com/audreyr/cookiecutter
-.. _cookiecutter-pypackage: https://github.com/audreyr/cookiecutter-pypackage
+**Why?** Creating reusable Django packages has always been
+annoying. There are no defined/maintained best practices (especially
+for ``setup.py``), so you end up cutting and pasting hacky, poorly
+understood, often legacy code from one project to the other. This
+template, inspired by `cookiecutter-pypackage`_, is designed to allow
+Django developers the ability to break free from cargo-cult
+configuration and follow a common pattern dictated by the experts and
+maintained here.
 
 Features
 --------
@@ -22,7 +23,6 @@ Features
 * Sphinx Documentation
 * Sane setup.py for easy PyPI registration/distribution
 * BSD licensed by default
-
 
 Usage
 ------
@@ -35,15 +35,18 @@ Now run it against this repo::
 
     $ cookiecutter https://github.com/pydanny/cookiecutter-dj-package.git
 
-You'll be prompted for some questions, answer them, then it will create a cookiecutter-dj-package with
-your new package.
+You'll be prompted for some questions, answer them, then it will
+create a cookiecutter-dj-package with your new package.
 
-Let's pretend you want to create a reusable Django app called "Blogging-for-Humans", with an app that can be placed
-in INSTALLED_APPS as "blogging_humans". Rather than have to copy/paste from other people's projects and
-then fight enthusiasm destroying app layout issues like `setup.py` configuration and creating test
-harnesses, you get cookiecutter_ to do all the work.
+Let's pretend you want to create a reusable Django app called
+"Blogging-for-Humans", with an app that can be placed in
+``INSTALLED_APPS`` as "blogging_humans". Rather than have to
+copy/paste from other people's projects and then fight enthusiasm
+destroying app layout issues like ``setup.py`` configuration and
+creating test harnesses, you get cookiecutter_ to do all the work.
 
-**Warning**: After this point, change 'Daniel Greenfeld', 'pydanny', etc to your own information.
+**Warning**: After this point, change 'Daniel Greenfeld', 'pydanny',
+ etc to your own information.
 
 It prompts you for questions. Answer them::
 
@@ -57,7 +60,7 @@ It prompts you for questions. Answer them::
     github_username (default is "yourname")? pydanny
     project_name (default is "dj-package")? Blogging-for-Humans
     repo_name (default is "dj-package")? blogging-for-humans
-    app_name (default is "djpackage")? blogging_humans        
+    app_name (default is "djpackage")? blogging_humans
     project_short_description (default is "Your project description goes here")? A blog that's easy for humans to use!
     release_date (default is "2013-08-15")? 2013-08-15
     year (default is "2013")? 2013
@@ -83,13 +86,13 @@ It's time to write the code!!!
 Register on PyPI
 ~~~~~~~~~~~~~~~~~
 
-Once you've got at least a prototype working and tests running, it's time to register the app on PyPI::
+Once you've got at least a prototype working and tests running, it's
+time to register the app on PyPI::
 
     python setup.py register
 
-
 Releasing on PyPI
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 Time to release a new version? Easy! Just run::
 
@@ -103,8 +106,5 @@ It will answer with something like::
 
 Go ahead and follow those instructions.
 
-Add to Django Packages
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Once you have a release, and assuming you have an account there, just go to https://www.djangopackages.com/packages/add/ and add it there. 
-
+.. _cookiecutter: https://github.com/audreyr/cookiecutter
+.. _cookiecutter-pypackage: https://github.com/audreyr/cookiecutter-pypackage
