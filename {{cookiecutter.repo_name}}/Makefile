@@ -15,9 +15,9 @@ help:
 clean: clean-build clean-pyc
 
 clean-build:
-	rm -fr build/
-	rm -fr dist/
-	rm -fr *.egg-info
+	rm -rf build/
+	rm -rf dist/
+	rm -rf *.egg-info
 
 clean-pyc:
 	find . -name '*.pyc' -exec rm -f {} +
@@ -28,7 +28,7 @@ lint:
 	flake8 {{ cookiecutter.repo_name }} tests
 
 test:
-	python runtests.py test
+	py.test
 
 test-all:
 	tox
@@ -37,7 +37,6 @@ coverage:
 	coverage run --source {{ cookiecutter.repo_name }} setup.py test
 	coverage report -m
 	coverage html
-	open htmlcov/index.html
 
 docs:
 	rm -f docs/{{ cookiecutter.repo_name }}.rst
@@ -45,7 +44,6 @@ docs:
 	sphinx-apidoc -o docs/ {{ cookiecutter.repo_name }}
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
-	open docs/_build/html/index.html
 
 release: clean
 	python setup.py sdist upload
