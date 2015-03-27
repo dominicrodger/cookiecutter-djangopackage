@@ -1,6 +1,7 @@
 .PHONY: clean-pyc clean-build docs
 
 help:
+	@echo "clean - remove build artifacts and Python file artifacts"
 	@echo "clean-build - remove build artifacts"
 	@echo "clean-pyc - remove Python file artifacts"
 	@echo "lint - check style with flake8"
