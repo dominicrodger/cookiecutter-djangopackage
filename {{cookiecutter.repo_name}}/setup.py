@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import os
 import sys
 
 import {{ cookiecutter.app_name }}
@@ -59,5 +58,5 @@ setup(
         "pytest-cov==1.7.0",
         "pytest-django==2.8.0",
     ],
-    cmdclass = {'test': PyTest},
+    cmdclass={'test': PyTest},
 )
