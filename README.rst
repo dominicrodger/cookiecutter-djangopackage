@@ -22,7 +22,7 @@ Features
 * Tox configuration
 * Sphinx Documentation
 * Sane ``setup.py`` for easy PyPI registration/distribution
-* BSD licensed by default
+* MIT licensed by default
 
 Usage
 ------
